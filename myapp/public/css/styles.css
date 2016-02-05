@@ -1,0 +1,37 @@
+@import url(http://api.mobilis.co.kr/webfonts/css/?fontface=NanumGothicWeb); 
+
+header{
+  border-bottom:1px solid gray;
+  padding:5px;
+}
+
+header .span6 .inline{
+    text-decoration: none;
+    text-align: right;
+    float: right;
+    vertical-align: bottom;
+}
+
+.form-search{
+    text-align: center;
+    vertical-align:bottom;
+    margin-top: 10px;
+}
+.form-search .search-query{
+    
+}
+
+nav {
+    margin-top: 20px;
+    text-align: center;
+}
+nav ol{
+  list-style:none;
+}
+article{
+  float:left;
+  padding:20px;
+}
+h2{
+  font-size:50px;
+}
