@@ -11,6 +11,11 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <title>Note Village | 노트 빌리지</title>
 
+    <!-- FooTable -->
+    <link href="css/footable.core.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+
 
 
 </head>
@@ -19,8 +24,8 @@
     <header>
         <div class="row-fluid">
             <div class="span6">
-                <h1><a href="/index.html">노트 빌리지</a></h1>
-                
+                <h1><a href="index.html">노트 빌리지</a></h1>
+
             </div>
             <div class="span6" style="text-align:right">
                 <a href="">노트 올리기</a>
@@ -38,195 +43,671 @@
             </a>
         </div>
         <div>
-            <button class="btn" type="submit">인간공학</button>
-            <button class="btn" type="submit">산플</button>
-            <button class="btn" type="submit">미적분1</button>
+            <a href="search.html" class="btn">인간공학</a>
+            <a href="search.html" class="btn">산플</a>
+            <a href="search.html" class="btn">미적분1</a>
         </div>
     </form>
 
 
     <nav>
-        <div class="wrapper wrapper-content animated fadeInRight">
-            <div class="row-fluid">
-                <div class="span2" style="height=100%;text-align:left;margin-left:15px">
-                    <h4>결과 내 재 검색</h4>
-                    <div style="font-weight:bold;text-align:center">
-                        학교
-                    </div>
-                    <label class="checkbox">
-                        <a href="">
-                            <input type="checkbox">
-                            <div><small>카이스트</small></div>
-                        </a>
-                    </label>
 
-                    <label class="checkbox">
-                        <a href="">
-                            <input type="checkbox">
-                            <div><small>서울대</small></div>
-                        </a>
-                    </label>
-                    <label class="checkbox">
-                        <a href="">
-                            <input type="checkbox">
-                            <div><small>포항공대</small></div>
-                        </a>
-                    </label>
-                    <div style="margin-top:7px; font-weight:bold; text-align:center">
-                        과목 명
-                    </div>
-                    <label class="checkbox">
-                        <a href="">
-                            <input type="checkbox">
-                            <div><small>미적분학1</small></div>
-                        </a>
-                    </label>
-                    <label class="checkbox">
-                        <a href="">
-                            <input type="checkbox">
-                            <div><small>미적분학2</small></div>
-                        </a>
-                    </label>
-                    <label class="checkbox">
-                        <a href="">
-                            <input type="checkbox">
-                            <div><small>기초미적분</small></div>
-                        </a>
-                    </label>
-                    <div style="margin-top:7px; font-weight:bold; text-align:center">날짜</div>
-                    <label class="checkbox">
-                        <a href="">
-                            <input type="checkbox">
-                            <div><small>15.05</small></div>
-                        </a>
-                    </label>
-                    <label class="checkbox">
-                        <a href="">
-                            <input type="checkbox">
-                            <div><small>15.06</small></div>
-                        </a>
-                    </label>
-                    <label class="checkbox">
-                        <a href="">
-                            <input type="checkbox">
-                            <div><small>16.04</small></div>
-                        </a>
-                    </label>
-                    <div style="margin-top:7px; font-weight:bold; text-align:center">지도교수</div>
-                    <label class="checkbox">
-                        <a href="">
-                            <input type="checkbox">
-                            <div><small>김김김</small></div>
-                        </a>
-                    </label>
-                    <label class="checkbox">
-                        <a href="">
-                            <input type="checkbox">
-                            <div><small>이이이</small></div>
-                        </a>
-                    </label>
-                    <label class="checkbox">
-                        <a href="">
-                            <input type="checkbox">
-                            <div><small>박박박</small></div>
-                        </a>
-                    </label>
-
-
-
+        <div class="row-fluid">
+            <div class="span2" style="height=100%;text-align:left;margin-left:15px">
+                <h4>결과 내 재 검색</h4>
+                <div style="font-weight:bold;text-align:center">
+                    학교
                 </div>
-                <div class="span9">
+                <label class="checkbox">
+                    <a href="">
+                        <input type="checkbox">
+                        <div><small>카이스트</small></div>
+                    </a>
+                </label>
 
-                    <div class="ibox float-e-margins">
+                <label class="checkbox">
+                    <a href="">
+                        <input type="checkbox">
+                        <div><small>서울대</small></div>
+                    </a>
+                </label>
+                <label class="checkbox">
+                    <a href="">
+                        <input type="checkbox">
+                        <div><small>포항공대</small></div>
+                    </a>
+                </label>
+                <div style="margin-top:7px; font-weight:bold; text-align:center">
+                    과목 명
+                </div>
+                <label class="checkbox">
+                    <a href="">
+                        <input type="checkbox">
+                        <div><small>미적분학1</small></div>
+                    </a>
+                </label>
+                <label class="checkbox">
+                    <a href="">
+                        <input type="checkbox">
+                        <div><small>미적분학2</small></div>
+                    </a>
+                </label>
+                <label class="checkbox">
+                    <a href="">
+                        <input type="checkbox">
+                        <div><small>기초미적분</small></div>
+                    </a>
+                </label>
+                <div style="margin-top:7px; font-weight:bold; text-align:center">날짜</div>
+                <label class="checkbox">
+                    <a href="">
+                        <input type="checkbox">
+                        <div><small>15.05</small></div>
+                    </a>
+                </label>
+                <label class="checkbox">
+                    <a href="">
+                        <input type="checkbox">
+                        <div><small>15.06</small></div>
+                    </a>
+                </label>
+                <label class="checkbox">
+                    <a href="">
+                        <input type="checkbox">
+                        <div><small>16.04</small></div>
+                    </a>
+                </label>
+                <div style="margin-top:7px; font-weight:bold; text-align:center">지도교수</div>
+                <label class="checkbox">
+                    <a href="">
+                        <input type="checkbox">
+                        <div><small>김김김</small></div>
+                    </a>
+                </label>
+                <label class="checkbox">
+                    <a href="">
+                        <input type="checkbox">
+                        <div><small>이이이</small></div>
+                    </a>
+                </label>
+                <label class="checkbox">
+                    <a href="">
+                        <input type="checkbox">
+                        <div><small>박박박</small></div>
+                    </a>
+                </label>
+
+
+
+            </div>
+            <div class="wrapper wrapper-content animated fadeInRight">
+                <div class="span9 offset1">
+                    <div class="ibox">
                         <div class="ibox-content">
-                            <div class="row-fluid">
-                                <div class="span6">
-                                    <small>
-                                검색결과 50개
-                                </small>
-                                </div>
-                                <div class="span6">
-                                    <div class="btn-group">
-                                        <button class="btn"><small>필터</small></button>
-                                        <button class="btn dropdown-toggle" data-toggle="dropdown">
-                                            <span class="caret"></span>
-                                        </button>
-                                        <ul class="dropdown-menu">
-                                            <a href="">
-                                                <div>최신순</div>
-                                            </a>
-                                            <a href="">
-                                                <div>다운로드 많은 순</div>
-                                            </a>
-                                            <a href="">
-                                                <div>업로더 순</div>
-                                            </a>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="hr-line-dashed"></div>
-                            <div class="search-result">
-                                <h5><a href="#">미적분학 1</a></h5>
-                                <p>
-                                    학교 학과 ID 등급 다운 수 좋아요 몇개 싫어요 몇개 가격 날짜 파일 형태 등등
-                                </p>
-                            </div>
-                            <div class="hr-line-dashed"></div>
-                            <div class="search-result">
-                                <h5><a href="#">미적분학 1</a></h5>
-                                <p>
-                                    학교 학과 ID 등급 다운 수 좋아요 몇개 싫어요 몇개 가격 날짜 파일 형태 등등
-                                </p>
-                            </div>
-                            <div class="hr-line-dashed"></div>
-                            <div class="search-result">
-                                <h5><a href="#">미적분학 1</a></h5>
-                                <p>
-                                    학교 학과 ID 등급 다운 수 좋아요 몇개 싫어요 몇개 가격 날짜 파일 형태 등등
-                                </p>
-                            </div>
-                            <div class="hr-line-dashed"></div>
-                            <div class="search-result">
-                                <h5><a href="#">미적분학 1</a></h5>
-                                <p>
-                                    학교 학과 ID 등급 다운 수 좋아요 몇개 싫어요 몇개 가격 날짜 파일 형태 등등
-                                </p>
-                            </div>
-                            <div class="hr-line-dashed"></div>
-                            <div class="search-result">
-                                <h5><a href="#">미적분학 1</a></h5>
-                                <p>
-                                    학교 학과 ID 등급 다운 수 좋아요 몇개 싫어요 몇개 가격 날짜 파일 형태 등등
-                                </p>
-                            </div>
-                            <div class="hr-line-dashed"></div>
-                            <div class="search-result">
-                                <h5><a href="#">미적분학 1</a></h5>
-                                <p>
-                                    학교 학과 ID 등급 다운 수 좋아요 몇개 싫어요 몇개 가격 날짜 파일 형태 등등
-                                </p>
-                            </div>
-                            <div class="hr-line-dashed"></div>
-                            <div class="text-center">
-                                <div class="btn-group">
-                                    <button class="btn btn-white" type="button"><i class="fa fa-chevron-left"></i></button>
-                                    <button class="btn btn-white">1</button>
-                                    <button class="btn btn-white  active">2</button>
-                                    <button class="btn btn-white">3</button>
-                                    <button class="btn btn-white">4</button>
-                                    <button class="btn btn-white">5</button>
-                                    <button class="btn btn-white">6</button>
-                                    <button class="btn btn-white">7</button>
-                                    <button class="btn btn-white" type="button"><i class="fa fa-chevron-right"></i> </button>
-                                </div>
-                            </div>
+
+                            <table class="footable table table-stripped toggle-arrow-tiny" data-page-size="12">
+                                <thead>
+                                    <tr>
+
+                                        <th data-toggle="true">과목 명</th>
+                                        <th data-hide="phone">업로더(학교)</th>
+                                        <th data-hide="all">추가 태그</th>
+                                        <th data-hide="phone">가격</th>
+                                        <th data-hide="phone,tablet">날짜</th>
+                                        <th data-hide="phone">파일 형태</th>
+                                        <th class="text-right" data-sort-ignore="true">다운로드 수</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <a href="product_page.html"></a>
+                                       <tr>
+
+                                           <td>
+                                            <a href="product_page.html">미적분학1</a>
+                                        </td>
+                                        <td>
+                                            <a href="product_page.html">watasi(KAIST)</a>
+                                        </td>
+                                        <td>
+                                            미적분, 대수학, 리만 적분
+                                        </td>
+                                        <td>
+                                            3,000원
+                                        </td>
+                                        <td>
+                                            16.02.07
+                                        </td>
+                                        <td>
+                                            노트 필기
+                                        </td>
+                                        <td class="text-right">
+                                            50회
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            미적분학 1
+                                        </td>
+                                        <td>
+                                            watasi(KAIST)
+                                        </td>
+                                        <td>
+                                            미적분, 대수학, 리만 적분
+                                        </td>
+                                        <td>
+                                            3,000원
+                                        </td>
+                                        <td>
+                                            16.02.07
+                                        </td>
+                                        <td>
+                                            노트 필기
+                                        </td>
+                                        <td class="text-right">
+                                            50회
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            미적분학 1
+                                        </td>
+                                        <td>
+                                            watasi(KAIST)
+                                        </td>
+                                        <td>
+                                            미적분, 대수학, 리만 적분
+                                        </td>
+                                        <td>
+                                            3,000원
+                                        </td>
+                                        <td>
+                                            16.02.07
+                                        </td>
+                                        <td>
+                                            노트 필기
+                                        </td>
+                                        <td class="text-right">
+                                            50회
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            미적분학 1
+                                        </td>
+                                        <td>
+                                            watasi(KAIST)
+                                        </td>
+                                        <td>
+                                            미적분, 대수학, 리만 적분
+                                        </td>
+                                        <td>
+                                            3,000원
+                                        </td>
+                                        <td>
+                                            16.02.07
+                                        </td>
+                                        <td>
+                                            노트 필기
+                                        </td>
+                                        <td class="text-right">
+                                            50회
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            미적분학 1
+                                        </td>
+                                        <td>
+                                            watasi(KAIST)
+                                        </td>
+                                        <td>
+                                            미적분, 대수학, 리만 적분
+                                        </td>
+                                        <td>
+                                            3,000원
+                                        </td>
+                                        <td>
+                                            16.02.07
+                                        </td>
+                                        <td>
+                                            노트 필기
+                                        </td>
+                                        <td class="text-right">
+                                            50회
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            미적분학 1
+                                        </td>
+                                        <td>
+                                            watasi(KAIST)
+                                        </td>
+                                        <td>
+                                            미적분, 대수학, 리만 적분
+                                        </td>
+                                        <td>
+                                            3,000원
+                                        </td>
+                                        <td>
+                                            16.02.07
+                                        </td>
+                                        <td>
+                                            노트 필기
+                                        </td>
+                                        <td class="text-right">
+                                            50회
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            미적분학 1
+                                        </td>
+                                        <td>
+                                            watasi(KAIST)
+                                        </td>
+                                        <td>
+                                            미적분, 대수학, 리만 적분
+                                        </td>
+                                        <td>
+                                            3,000원
+                                        </td>
+                                        <td>
+                                            16.02.07
+                                        </td>
+                                        <td>
+                                            노트 필기
+                                        </td>
+                                        <td class="text-right">
+                                            50회
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            미적분학 1
+                                        </td>
+                                        <td>
+                                            watasi(KAIST)
+                                        </td>
+                                        <td>
+                                            미적분, 대수학, 리만 적분
+                                        </td>
+                                        <td>
+                                            3,000원
+                                        </td>
+                                        <td>
+                                            16.02.07
+                                        </td>
+                                        <td>
+                                            노트 필기
+                                        </td>
+                                        <td class="text-right">
+                                            50회
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            미적분학 1
+                                        </td>
+                                        <td>
+                                            watasi(KAIST)
+                                        </td>
+                                        <td>
+                                            미적분, 대수학, 리만 적분
+                                        </td>
+                                        <td>
+                                            3,000원
+                                        </td>
+                                        <td>
+                                            16.02.07
+                                        </td>
+                                        <td>
+                                            노트 필기
+                                        </td>
+                                        <td class="text-right">
+                                            50회
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            미적분학 1
+                                        </td>
+                                        <td>
+                                            watasi(KAIST)
+                                        </td>
+                                        <td>
+                                            미적분, 대수학, 리만 적분
+                                        </td>
+                                        <td>
+                                            3,000원
+                                        </td>
+                                        <td>
+                                            16.02.07
+                                        </td>
+                                        <td>
+                                            노트 필기
+                                        </td>
+                                        <td class="text-right">
+                                            50회
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            미적분학 1
+                                        </td>
+                                        <td>
+                                            watasi(KAIST)
+                                        </td>
+                                        <td>
+                                            미적분, 대수학, 리만 적분
+                                        </td>
+                                        <td>
+                                            3,000원
+                                        </td>
+                                        <td>
+                                            16.02.07
+                                        </td>
+                                        <td>
+                                            노트 필기
+                                        </td>
+                                        <td class="text-right">
+                                            50회
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            미적분학 1
+                                        </td>
+                                        <td>
+                                            watasi(KAIST)
+                                        </td>
+                                        <td>
+                                            미적분, 대수학, 리만 적분
+                                        </td>
+                                        <td>
+                                            3,000원
+                                        </td>
+                                        <td>
+                                            16.02.07
+                                        </td>
+                                        <td>
+                                            노트 필기
+                                        </td>
+                                        <td class="text-right">
+                                            50회
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            미적분학 1
+                                        </td>
+                                        <td>
+                                            watasi(KAIST)
+                                        </td>
+                                        <td>
+                                            미적분, 대수학, 리만 적분
+                                        </td>
+                                        <td>
+                                            3,000원
+                                        </td>
+                                        <td>
+                                            16.02.07
+                                        </td>
+                                        <td>
+                                            노트 필기
+                                        </td>
+                                        <td class="text-right">
+                                            50회
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            미적분학 1
+                                        </td>
+                                        <td>
+                                            watasi(KAIST)
+                                        </td>
+                                        <td>
+                                            미적분, 대수학, 리만 적분
+                                        </td>
+                                        <td>
+                                            3,000원
+                                        </td>
+                                        <td>
+                                            16.02.07
+                                        </td>
+                                        <td>
+                                            노트 필기
+                                        </td>
+                                        <td class="text-right">
+                                            50회
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            미적분학 1
+                                        </td>
+                                        <td>
+                                            watasi(KAIST)
+                                        </td>
+                                        <td>
+                                            미적분, 대수학, 리만 적분
+                                        </td>
+                                        <td>
+                                            3,000원
+                                        </td>
+                                        <td>
+                                            16.02.07
+                                        </td>
+                                        <td>
+                                            노트 필기
+                                        </td>
+                                        <td class="text-right">
+                                            50회
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            미적분학 1
+                                        </td>
+                                        <td>
+                                            watasi(KAIST)
+                                        </td>
+                                        <td>
+                                            미적분, 대수학, 리만 적분
+                                        </td>
+                                        <td>
+                                            3,000원
+                                        </td>
+                                        <td>
+                                            16.02.07
+                                        </td>
+                                        <td>
+                                            노트 필기
+                                        </td>
+                                        <td class="text-right">
+                                            50회
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            미적분학 1
+                                        </td>
+                                        <td>
+                                            watasi(KAIST)
+                                        </td>
+                                        <td>
+                                            미적분, 대수학, 리만 적분
+                                        </td>
+                                        <td>
+                                            3,000원
+                                        </td>
+                                        <td>
+                                            16.02.07
+                                        </td>
+                                        <td>
+                                            노트 필기
+                                        </td>
+                                        <td class="text-right">
+                                            50회
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            미적분학 1
+                                        </td>
+                                        <td>
+                                            watasi(KAIST)
+                                        </td>
+                                        <td>
+                                            미적분, 대수학, 리만 적분
+                                        </td>
+                                        <td>
+                                            3,000원
+                                        </td>
+                                        <td>
+                                            16.02.07
+                                        </td>
+                                        <td>
+                                            노트 필기
+                                        </td>
+                                        <td class="text-right">
+                                            50회
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            미적분학 1
+                                        </td>
+                                        <td>
+                                            watasi(KAIST)
+                                        </td>
+                                        <td>
+                                            미적분, 대수학, 리만 적분
+                                        </td>
+                                        <td>
+                                            3,000원
+                                        </td>
+                                        <td>
+                                            16.02.07
+                                        </td>
+                                        <td>
+                                            노트 필기
+                                        </td>
+                                        <td class="text-right">
+                                            50회
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            미적분학 1
+                                        </td>
+                                        <td>
+                                            watasi(KAIST)
+                                        </td>
+                                        <td>
+                                            미적분, 대수학, 리만 적분
+                                        </td>
+                                        <td>
+                                            3,000원
+                                        </td>
+                                        <td>
+                                            16.02.07
+                                        </td>
+                                        <td>
+                                            노트 필기
+                                        </td>
+                                        <td class="text-right">
+                                            50회
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            미적분학 1
+                                        </td>
+                                        <td>
+                                            watasi(KAIST)
+                                        </td>
+                                        <td>
+                                            미적분, 대수학, 리만 적분
+                                        </td>
+                                        <td>
+                                            3,000원
+                                        </td>
+                                        <td>
+                                            16.02.07
+                                        </td>
+                                        <td>
+                                            노트 필기
+                                        </td>
+                                        <td class="text-right">
+                                            50회
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            미적분학 1
+                                        </td>
+                                        <td>
+                                            watasi(KAIST)
+                                        </td>
+                                        <td>
+                                            미적분, 대수학, 리만 적분
+                                        </td>
+                                        <td>
+                                            3,000원
+                                        </td>
+                                        <td>
+                                            16.02.07
+                                        </td>
+                                        <td>
+                                            노트 필기
+                                        </td>
+                                        <td class="text-right">
+                                            50회
+                                        </td>
+                                    </tr>
+
+
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="6">
+                                            <ul class="pagination pull-right"></ul>
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </nav>
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+
+    <!-- FooTable -->
+    <script src="js/plugins/footable/footable.all.min.js"></script>
+
+    <!-- Page-Level Scripts -->
+    <script>
+        $(document).ready(function () {
+
+            $('.footable').footable();
+
+        });
+    </script>
 
 
     <script src="http://code.jquery.com/jquery.js"></script>

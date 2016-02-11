@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Note Village | 노트 빌리지</title>
+
+    <!-- FooTable -->
+    <link href="css/footable.core.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/plugins/dropzone/basic.css" rel="stylesheet">
+    <link href="css/plugins/dropzone/dropzone.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="row-fluid">
+            <div class="span6">
+                <h1><a href="index.html">노트 빌리지</a></h1>
+            </div>
+            <div class="span6" style="text-align:right">
+                <a href="">노트 올리기</a>
+                <a href="">장바구니</a>
+                <a href="">고객센터</a>
+            </div>
+        </div>
+    </header>
+
+    <form class="form-search">
+        <div class="input-append row-fluid">
+            <input type="text" class="span6 search-query">
+            <a href="/search.html" class="btn">
+                <i class="fa fa-search"></i>
+            </a>
+        </div>
+        <div>
+            <a href="search.html" class="btn">인간공학</a>
+            <a href="search.html" class="btn">산플</a>
+            <a href="search.html" class="btn">미적분1</a>
+        </div>
+    </form>
+
+
+    <nav>
+        <div class="wrapper wrapper-content animated fadeIn">
+            <div class="row">
+                <div class="span8">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5>파일을 드래그하거나 직접 업로드하세요.</h5>
+
+                        </div>
+                        <div class="ibox-content">
+                            <form id="my-awesome-dropzone" class="dropzone" action="#">
+                                <div class="dropzone-previews"></div>
+
+                            </form>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="span4">
+                    날짜 가격 등등 정보 입력
+                </div>
+
+            </div>
+
+        </div>
+        <div>
+            <a href="product_page.html" class="btn btn-primary">업로드 완료</a>
+        </div>
+        <div style="margin:5%"><a href="" class="btn">+ 누르면 업로드 및 정보입력창 추가 생성</a>
+        </div>
+
+
+    </nav>
+    <script src="js/plugins/dropzone/dropzone.js"></script>
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+
+    <!-- DROPZONE -->
+    <script src="js/plugins/dropzone/dropzone.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            Dropzone.options.myAwesomeDropzone = {
+
+                autoProcessQueue: false,
+                uploadMultiple: true,
+                parallelUploads: 100,
+                maxFiles: 100,
+
+                // Dropzone settings
+                init: function () {
+                    var myDropzone = this;
+
+                    this.element.querySelector("button[type=submit]").addEventListener("click", function (e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        myDropzone.processQueue();
+                    });
+                    this.on("sendingmultiple", function () {});
+                    this.on("successmultiple", function (files, response) {});
+                    this.on("errormultiple", function (files, response) {});
+                }
+
+            }
+
+        });
+    </script>
+
+
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
