@@ -1,0 +1,25 @@
+ID
+
+ID
+Password
+
+Password
+Password again
+
+Passwordagain
+Name
+
+Name
+Email
+
+create table user (
+   id int not null auto_increment primary key,
+   user_id varchar(25) not null,
+   user_pw char(41) not null,
+   user_name varchar(25),
+   email varchar(100) not null unique);
+   
+insert into user
+(id, user_id, user_pw, user_name, email)
+values
+(null, 'testuser', password('passpass'), 'username', 'user@user.com');
